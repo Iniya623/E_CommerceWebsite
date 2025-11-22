@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce | Light Green Theme</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1 class="logo">Iniya's Shop</h1>
+
+        <input type="text" id="search" placeholder="Search items...">
+
+        <div class="cart-icon">
+            🛒 <span id="cartCount">0</span>
+        </div>
+        <button class="admin-btn" onclick="openLogin()">Admin Mode</button>
+
+    </header>
+
+    <!-- Admin Add Product -->
+    <section class="admin-panel">
+        <h2>Add / Edit Product</h2>
+
+        <input type="text" id="pName" placeholder="Product Name">
+        <input type="number" id="pPrice" placeholder="Price">
+        <input type="text" id="pImg" placeholder="Image URL (you will replace)">
+        <button id="addProductBtn">Add Product</button>
+    </section>
+
+    <!-- Product List -->
+    <section class="product-section">
+        <h2>Products</h2>
+        <div id="productContainer" class="product-container"></div>
+    </section>
+    <div id="loginPopup" class="login-popup">
+    <div class="login-box">
+        <h3>Admin Login</h3>
+        <input type="password" id="adminPass" placeholder="Enter Password">
+        <button onclick="checkLogin()">Login</button>
+        <button class="close-btn" onclick="closeLogin()">Close</button>
+    </div>
+    </div>
+ 
+
+    <script src="script.js"></script>
+</body>
+</html>
